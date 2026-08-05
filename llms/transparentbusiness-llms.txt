@@ -1,0 +1,58 @@
+# TransparentBusiness
+
+> TransparentBusiness is a New York based SaaS company (founded 2012 by Alex Konanykhin and Silvina
+> Moschini) selling a cloud platform for managing and monitoring remote workforces: a desktop timer,
+> screenshot-based activity verification, timesheets, task assignment, and real-time project cost and
+> progress reporting for distributed teams and contractors. It also operates the SheWorks! and Yandiki
+> talent marketplaces and the CloudWorking Academy training platform, and was later renamed
+> Unicoin, Inc.
+
+generated: 2026-08-05
+method: generated
+source: apis.yml + repo artifacts (API Evangelist enrichment pipeline); the provider publishes no
+llms.txt of its own — https://www.transparentbusiness.com/llms.txt returned HTTP 403 on 2026-08-05.
+
+## API surface
+
+TransparentBusiness publishes **no public API**. As of 2026-08-05 there is no developer portal, no API
+reference, no SDK, no webhook catalog, and no machine-readable specification (OpenAPI, AsyncAPI,
+GraphQL SDL, MCP tools list, or A2A agent card) on any host we could reach. The product is consumed
+through the hosted web application at https://transparentbusiness.com/signin and the downloadable
+desktop timer clients.
+
+Evidence recorded by this pass:
+
+- The company's public knowledge base (54 articles, queried via the Zendesk Help Center API on
+  2026-08-05) returns **zero** articles for `API`, `webhook` or `SDK`, against a working control
+  (`time` returns 33 articles).
+- The site's own navigation and footer carry no developer, API, docs or integrations link.
+- Every archived `transparentbusiness.com/api*` URL in the Internet Archive was captured as a
+  **404** at crawl time.
+
+## Product
+
+- [TransparentBusiness](https://transparentbusiness.com/): remote workforce management and monitoring
+  SaaS — timer, screenshots, timesheets, tasks, project cost and progress reporting.
+- SheWorks! and Yandiki: talent marketplaces operated by the same company.
+- CloudWorking Academy: remote-work readiness training.
+
+## Links
+
+- [Website](https://transparentbusiness.com/)
+- [Pricing](https://transparentbusiness.com/pricing.html)
+- [Blog](https://transparentbusiness.com/blog.html)
+- [Help Center](https://transparentbussiness.zendesk.com/hc/en-us/)
+- [Sign up](https://transparentbusiness.com/signup)
+- [Sign in](https://transparentbusiness.com/signin)
+- [Terms of Service](https://transparentbusiness.com/terms.html)
+- [Privacy Policy](https://transparentbusiness.com/privacy.html)
+- [Contact](https://transparentbusiness.com/contact.html)
+
+## Notes for agents
+
+- There is nothing here to call. Do not synthesize a TransparentBusiness API client, base URL, or
+  endpoint list — none is published.
+- The live origin is fronted by Cloudflare and answers automated requests with HTTP 403; content
+  facts in this file were established from the provider's own archived HTML and its public Zendesk
+  Help Center API.
+- This file is maintained by API Evangelist, not by TransparentBusiness.

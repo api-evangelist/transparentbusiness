@@ -1,10 +1,18 @@
 aid: transparentbusiness
 name: TransparentBusiness
-description: 'TransparentBusiness is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'TransparentBusiness is a New York based SaaS company, founded in 2012 by Alex Konanykhin
+  and Silvina Moschini, that sells a cloud platform for managing and monitoring remote workforces: a
+  desktop timer, screenshot-based activity verification, timesheets, task assignment, and real-time
+  project cost and progress reporting for distributed teams and contractors. The company also operates
+  the SheWorks! and Yandiki talent marketplaces and the CloudWorking Academy training platform, and was
+  later renamed Unicoin, Inc. The product is delivered as a hosted web application plus downloadable
+  desktop timer clients; the company publishes no public developer program, API reference, SDK, or
+  machine-readable specification.'
+image: https://transparentbusiness.com/img/index-slide-bg-1.jpg
 url: https://raw.githubusercontent.com/api-evangelist/transparentbusiness/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/transparentbusiness_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +20,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Remote Work
+- Workforce Management
+- Time Tracking
+- Productivity
+- Project Management
+- Human Resources
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +34,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/transparentbusiness-domain-security.yml
+- type: LLMsTxt
+  url: llms/transparentbusiness-llms.txt
 - type: Website
-  url: https://forgeglobal.com/transparentbusiness_stock/
+  url: https://transparentbusiness.com/
+- type: Pricing
+  url: https://transparentbusiness.com/pricing.html
+- type: Blog
+  url: https://transparentbusiness.com/blog.html
+- type: SignUp
+  url: https://transparentbusiness.com/signup
+- type: Login
+  url: https://transparentbusiness.com/signin
+- type: HelpCenter
+  url: https://transparentbussiness.zendesk.com/hc/en-us/
+- type: TermsOfService
+  url: https://transparentbusiness.com/terms.html
+- type: PrivacyPolicy
+  url: https://transparentbusiness.com/privacy.html
+- type: ContactUs
+  url: https://transparentbusiness.com/contact.html
+- type: LinkedIn
+  url: https://www.linkedin.com/company/transparentbusiness
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    TransparentBusiness ships a hosted timer/timesheet product and nothing else: its own 54-article
+    Zendesk knowledge base returns zero hits for "API", "webhook" and "SDK" against a working control
+    (33 hits for "time"), its site navigation carries no developer or integrations link, and every
+    archived /api* URL was captured as a 404.
+  evidence:
+  - url: https://transparentbussiness.zendesk.com/api/v2/help_center/articles/search.json?query=API
+    status: 200
+  - url: https://transparentbussiness.zendesk.com/api/v2/help_center/en-us/articles.json
+    status: 200
+  - url: https://www.transparentbusiness.com/llms.txt
+    status: 403
+  - url: https://www.transparentbusiness.com/openapi.json
+    status: 403
+  - url: https://transparentbusiness.com/api/
+    status: 404
+  checked: '2026-08-05'
