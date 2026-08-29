@@ -8,6 +8,17 @@ description: 'TransparentBusiness is a New York based SaaS company, founded in 2
   later renamed Unicoin, Inc. The product is delivered as a hosted web application plus downloadable
   desktop timer clients; the company publishes no public developer program, API reference, SDK, or
   machine-readable specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://transparentbusiness.com/img/index-slide-bg-1.jpg
 url: https://raw.githubusercontent.com/api-evangelist/transparentbusiness/refs/heads/main/apis.yml
 x-type: company
